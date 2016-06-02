@@ -48,16 +48,12 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 
 Plug 'bling/vim-airline'
-Plug 'altercation/vim-colors-solarized'
 
 "Plug 'valloric/youcompleteme'
 
 call plug#end()
 
 nmap <F8> :TagbarToggle<CR>
-
-set background=dark
-colorscheme solarized
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
