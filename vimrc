@@ -49,6 +49,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+<<<<<<< fde59ca37e0df920b85883049012f7dc2c2d897e
 " progamming languages
 Plug 'fatih/vim-go'
 Plug 'derekwyatt/vim-scala'
@@ -56,6 +57,17 @@ Plug 'derekwyatt/vim-scala'
 
 " hashcorp devops
 Plug 'hashivim/vim-packer'
+=======
+" useful helpers
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-surround'
+
+" scala
+Plug 'derekwyatt/vim-scala'
+" go
+Plug 'fatih/vim-go'
+"terraform
+>>>>>>> remove plugged directory
 Plug 'hashivim/vim-terraform'
 
 call plug#end()
