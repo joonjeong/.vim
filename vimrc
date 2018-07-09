@@ -69,6 +69,10 @@ Plug 'fatih/vim-go'
 "terraform
 >>>>>>> remove plugged directory
 Plug 'hashivim/vim-terraform'
+Plug 'hashivim/vim-packer'
+
+"markdown
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
