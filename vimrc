@@ -1,31 +1,6 @@
-set ts=2 sw=2 sts=2
-set noeb vb t_vb=
-set expandtab
-set cindent
-set smartindent
-set autoindent
-
-set number
-set ruler
-set nobackup
-set noswapfile
-
 set nocompatible
-filetype plugin on
+filetype off
 syntax on
-
-set backspace=indent,eol,start
-
-set showmatch
-
-set hlsearch
-set incsearch
-
-set t_Co=256
-set laststatus=2
-
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>so :so $MYVIMRC<CR>
 
 call plug#begin()
 
@@ -49,7 +24,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-<<<<<<< fde59ca37e0df920b85883049012f7dc2c2d897e
 " progamming languages
 Plug 'fatih/vim-go'
 Plug 'derekwyatt/vim-scala'
@@ -57,17 +31,6 @@ Plug 'derekwyatt/vim-scala'
 
 " hashcorp devops
 Plug 'hashivim/vim-packer'
-=======
-" useful helpers
-Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-surround'
-
-" scala
-Plug 'derekwyatt/vim-scala'
-" go
-Plug 'fatih/vim-go'
-"terraform
->>>>>>> remove plugged directory
 Plug 'hashivim/vim-terraform'
 Plug 'hashivim/vim-packer'
 
@@ -76,16 +39,10 @@ Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
-map <C-n> :NERDTreeToggle<CR>
-nmap <F8> :TagbarToggle<CR>
+filetype plugin indent on
 
-let g:airline#extensions#tabline#enabled=1
-
-set statusline+=%#warningmsg#
-set statusline+=%*
-
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-
+source ~/.vim/startup/mappings.vim
+source ~/.vim/startup/settings.vim
 
 " vimwiki
 function! ToggleCalendar()
