@@ -44,26 +44,5 @@ filetype plugin indent on
 source ~/.vim/startup/mappings.vim
 source ~/.vim/startup/settings.vim
 
-" vimwiki
-function! ToggleCalendar()
-  execute ":Calendar"
-  if exists("g:calendar_open")
-    if g:calendar_open == 1
-      execute "q"
-      unlet g:calendar_open
-    else
-      g:calendar_open = 1
-    end
-  else
-    let g:calendar_open = 1
-  end
-endfunction
-
-let g:vimwiki_list = [
-      \{'path': '~/workspaces/private.wiki'},
-      \{'path': '~/workspaces/tech.wiki'},
-\]
-let g:vimwiki_conceallevel = 0
-au BufRead,BufNewFile *.wiki set filetype=vimwiki
-":autocmd FileType vimwiki map d :VimwikiMakeDiaryNote
-":autocmd FileType vimwiki map c :call ToggleCalendar()
+source ~/.vim/vimwiki/functions.vim
+source ~/.vim/vimwiki/settings.vim
