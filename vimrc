@@ -39,6 +39,8 @@ Plug 'tfnico/vim-gradle'
 "markdown
 Plug 'plasticboy/vim-markdown'
 
+Plug 'tpope/vim-liquid'
+
 call plug#end()
 
 filetype plugin indent on
