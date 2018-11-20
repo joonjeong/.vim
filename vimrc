@@ -9,6 +9,7 @@ Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Productive
 Plug 'mattn/calendar-vim'
@@ -19,6 +20,7 @@ Plug 'mhinz/vim-startify'
 " for Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'johngrib/vim-git-msg-wheel'
 
 " for eye-candies
 Plug 'vim-airline/vim-airline'
@@ -38,8 +40,10 @@ Plug 'tfnico/vim-gradle'
 
 "markdown
 Plug 'plasticboy/vim-markdown'
-
 Plug 'tpope/vim-liquid'
+
+"python
+Plug 'nvie/vim-flake8'
 
 call plug#end()
 
