@@ -44,6 +44,7 @@ Plug 'tpope/vim-liquid'
 
 "python
 Plug 'nvie/vim-flake8'
+Plug 'ibab/vim-snakemake'
 
 call plug#end()
 
