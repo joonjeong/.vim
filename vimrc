@@ -45,6 +45,7 @@ Plug 'tpope/vim-liquid'
 
 "python
 Plug 'nvie/vim-flake8'
+Plug 'szymonmaszke/vimpyter'
 Plug 'ibab/vim-snakemake'
 
 call plug#end()
@@ -59,3 +60,8 @@ source ~/.vim/vimwiki/settings.vim
 
 autocmd Filetype java setlocal ts=4 sw=4 expandtab
 autocmd Filetype gradle setlocal ts=2 sw=2 expandtab
+
+set colorcolumn=80
+set fileformat=unix
+
+au BufNewFile,BufRead *.rule set syntax=snakemake
