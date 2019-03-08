@@ -1,5 +1,4 @@
 set nocompatible
-set fileformat=unix
 filetype off
 syntax on
 
