@@ -47,6 +47,8 @@ Plug 'nvie/vim-flake8'
 Plug 'szymonmaszke/vimpyter'
 Plug 'ibab/vim-snakemake'
 
+Plug 'thanethomson/vim-jenkinsfile'
+
 call plug#end()
 
 filetype plugin indent on
