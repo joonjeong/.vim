@@ -36,6 +36,7 @@ Plug 'hashivim/vim-packer'
 Plug 'hashivim/vim-terraform'
 Plug 'hashivim/vim-packer'
 
+Plug 'vim-scripts/groovy.vim'
 Plug 'tfnico/vim-gradle'
 
 "markdown
@@ -57,10 +58,3 @@ source ~/.vim/startup/settings.vim
 source ~/.vim/vimwiki/functions.vim
 source ~/.vim/vimwiki/settings.vim
 
-autocmd Filetype java setlocal ts=4 sw=4 expandtab
-autocmd Filetype gradle setlocal ts=2 sw=2 expandtab
-
-set colorcolumn=80
-set fileformat=unix
-
-au BufNewFile,BufRead *.rule set syntax=snakemake

@@ -25,4 +25,15 @@ let g:airline#extensions#tabline#enabled=1
 set statusline+=%#warningmsg#
 set statusline+=%*
 
+set colorcolumn=80
+set fileformat=unix
+
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype java setlocal ts=4 sw=4 sts=4 expandtab
+autocmd Filetype gradle setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype snakemake setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype snakemake setlocal ts=2 sw=2 sts=2 expandtab
+
+autocmd BufNewFile,BufRead *.rule set syntax=snakemake
+autocmd BufNewFile,BufRead Jenkinsfile setf groovy
+autocmd BufNewFile,BufRead *.jenkinsfile setf groovy
