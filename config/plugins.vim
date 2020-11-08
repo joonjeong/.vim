@@ -7,12 +7,13 @@ Plug 'rking/ag.vim'
 Plug 'neoclide/coc.nvim'
 Plug 'tpope/vim-surround'
 
+Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Productive
+" documentation
 Plug 'vimwiki/vimwiki'
-Plug 'mhinz/vim-startify'
+Plug 'robertbasic/vim-hugo-helper'
 
 " for Git
 Plug 'tpope/vim-fugitive'

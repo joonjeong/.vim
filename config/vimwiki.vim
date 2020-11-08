@@ -1,7 +1,6 @@
 let g:vimwiki_list = [
-      \{'path': '~/vimwiki/', 'ext': '.md', 'diary_rel_path': '.'},
+      \{'path': '~/vimwiki/documents', 'syntax': 'markdown', 'ext': '.md' },
+      \{'path': '~/vimwiki/joonjeong.github.io/content', 'syntax': 'markdown', 'ext': '.md' },
 \]
 
 let g:vimwiki_conceallevel = 0
-
-autocmd BufNewFile,BufRead *.wiki set filetype=vimwiki
